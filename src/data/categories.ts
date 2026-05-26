@@ -1,0 +1,68 @@
+import { EquipmentCategory } from "@/types"
+
+export const categories: EquipmentCategory[] = [
+  {
+    id: "excavators",
+    name: "Экскаваторы",
+    icon: "construction",
+    priceFrom: 45000,
+    unit: "смена",
+    description: "Гусеничные и колёсные, ковш 0.3–1.5 м³",
+  },
+  {
+    id: "cranes",
+    name: "Автокраны",
+    icon: "crane",
+    priceFrom: 65000,
+    unit: "смена",
+    description: "Грузоподъёмность 16–100 тонн",
+  },
+  {
+    id: "dump-trucks",
+    name: "Самосвалы",
+    icon: "truck",
+    priceFrom: 35000,
+    unit: "смена",
+    description: "Грузоподъёмность 10–32 тонны",
+  },
+  {
+    id: "bulldozers",
+    name: "Бульдозеры",
+    icon: "bulldozer",
+    priceFrom: 55000,
+    unit: "смена",
+    description: "Мощность 130–355 л.с.",
+  },
+  {
+    id: "loaders",
+    name: "Фронтальные погрузчики",
+    icon: "loader",
+    priceFrom: 40000,
+    unit: "смена",
+    description: "Ковш 1.5–4.0 м³",
+  },
+  {
+    id: "aerial-platforms",
+    name: "Автовышки",
+    icon: "aerial",
+    priceFrom: 30000,
+    unit: "смена",
+    description: "Высота подъёма 12–45 метров",
+  },
+  {
+    id: "manipulators",
+    name: "Манипуляторы",
+    icon: "manipulator",
+    priceFrom: 38000,
+    unit: "смена",
+    description: "Вылет стрелы 5–18 метров",
+  },
+  {
+    id: "concrete-mixers",
+    name: "Бетоносмесители",
+    icon: "mixer",
+    priceFrom: 28000,
+    unit: "смена",
+    description: "Объём барабана 5–10 м³",
+  },
+]
