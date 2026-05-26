@@ -12,7 +12,7 @@ const fleet = [
     id: 'mitsubishi-15',
     brand: 'Mitsubishi Grendia',
     name: 'Погрузчик 1.5 тонны',
-    price: '30 000 ₸',
+    price: '65 000 ₸',
     priceNote: 'за 3 часа · минимальный заказ',
     image: '/images/fleet/mitsubishi-garage.jpg',
     imageAlt: 'Зелёный вилочный погрузчик Mitsubishi Grendia в гараже',
