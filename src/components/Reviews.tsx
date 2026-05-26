@@ -11,23 +11,39 @@ const reviews = [
     avatar: 'А',
     rating: 5,
     text: 'Мастер добрых дел. Надёжный партнёр.',
-    date: '2024',
+    date: 'Сентябрь 2024',
   },
   {
     id: 2,
-    author: 'Vugar M.',
-    avatar: 'V',
+    author: 'Борис Иванов',
+    avatar: 'Б',
     rating: 5,
-    text: 'Хороший сервис. С хорошими ценами. Спасибо, быстро и качественно делают.',
-    date: '2024',
+    text: 'Хороший сервис.',
+    date: 'Август 2024',
   },
   {
     id: 3,
+    author: 'Vugar Mirkusenov',
+    avatar: 'V',
+    rating: 5,
+    text: 'Хороший сервис. С хорошими ценами. Спасибо, быстро и качественно делают.',
+    date: 'Апрель 2024',
+  },
+  {
+    id: 4,
+    author: 'Muslim Mamedov',
+    avatar: 'M',
+    rating: 5,
+    text: 'Исмаил чёткий пацан 👍',
+    date: 'Апрель 2024',
+  },
+  {
+    id: 5,
     author: 'Темперамент Улиц',
     avatar: 'Т',
     rating: 5,
-    text: 'Сколько сервисов объездил, но таких профессиональных мастеров не видел. Цены и качество выполненных работ соответствует действительности.',
-    date: '2024',
+    text: 'Сколько сервисов объездил, но таких профессиональных мастеров не видел. Цены и качество выполненных работ соответствует действительности. Рекомендую!',
+    date: 'Апрель 2024',
   },
 ]
 
@@ -54,7 +70,7 @@ export function Reviews() {
             <span className="text-sm font-semibold text-white">5.0</span>
             <div className="w-px h-4 bg-[#3A3A3A]" />
             <a
-              href="https://2gis.kz"
+              href="https://2gis.kz/almaty/firm/70000001083910413"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-neutral-400 hover:text-[var(--accent)] transition-colors"
@@ -65,7 +81,7 @@ export function Reviews() {
         </AnimatedSection>
 
         {/* Review cards */}
-        <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {reviews.map((review) => (
             <ReviewCard key={review.id} review={review} />
           ))}
@@ -106,7 +122,7 @@ function ReviewCard({ review }: { review: typeof reviews[number] }) {
         </div>
         <div>
           <p className="text-sm font-medium text-white">{review.author}</p>
-          <p className="text-xs text-neutral-600">Отзыв с 2GIS</p>
+          <p className="text-xs text-neutral-600">{review.date} · 2GIS</p>
         </div>
       </div>
     </motion.div>

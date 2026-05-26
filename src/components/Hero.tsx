@@ -5,8 +5,7 @@ import { Phone, Star, Truck, UserCheck, Clock } from 'lucide-react'
 import { motion, Variants } from 'framer-motion'
 import { buildPhoneLink, PHONE_DISPLAY_PRIMARY } from '@/lib/utils'
 
-const HERO_IMAGE =
-  'https://images.unsplash.com/photo-1581092335397-9fa341108e1e?w=1920&q=85'
+const HERO_IMAGE = '/images/fleet/mitsubishi-warehouse.jpg'
 
 const EASE = [0.21, 0.47, 0.32, 0.98] as [number, number, number, number]
 
